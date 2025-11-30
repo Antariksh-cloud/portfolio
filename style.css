@@ -1,0 +1,94 @@
+/* RESET & BASICS */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px; /* Keeps content from getting too wide */
+    margin: 0 auto;    /* Centers the content */
+    padding: 20px;
+}
+
+a { text-decoration: none; color: inherit; }
+a:hover { color: #888; }
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.links a { margin-left: 20px; }
+.active { color: #000; text-decoration: underline; }
+
+/* HERO SECTION */
+.hero {
+    max-width: 800px;
+    margin: 60px 0 100px 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* PROJECT GRID */
+.category-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    color: #888;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 4px; /* Optional: Slight rounded corners */
+}
+
+.project-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.project-info p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 100px;
+    border-top: 1px solid #eee;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.socials a { margin-left: 15px; }
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* Stack projects on phone */
+    }
+    nav { padding: 20px 0; }
+}
